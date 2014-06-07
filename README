@@ -50,3 +50,19 @@ To exit live-f1 press ENTER.
 Friday practice sessions often have up to 30 cars running, so if you
 wish to view the timing information for those you will need to ensure
 that the terminal has at least that number of lines available.
+
+
+Installation
+------------
+
+Ubuntu/Debian
+$ sudo apt-get install build-essential autoconf automake pkg-config libtool autopoint gettext libncurses5-dev libneon27-dev git-core
+$ git clone https://github.com/rochoa/live-f1
+$ cd live-f1
+$ autoreconf -i
+$ ./configure
+$ sudo make install
+
+Mac OS X via Homebrew
+$ brew install https://raw.githubusercontent.com/rochoa/live-f1/master/live-f1.rb # will get lastest stable version
+$ brew install https://raw.githubusercontent.com/rochoa/live-f1/master/live-f1.rb --HEAD # will get latest development version
